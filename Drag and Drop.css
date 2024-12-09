@@ -1,0 +1,132 @@
+body {
+    font-family: sans-serif;
+    background: linear-gradient(135deg, #2c3e50, #34495e); /* Two-tone gradient */
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+h2 {
+    background-color: rgba(255, 255, 255, 0.8); /* Light background for readability */
+    padding: 20px;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: 550;
+    text-align: start;
+}
+
+h1 {
+    font-size: 3em;
+    color: white;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.reset {
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-size: 15px;
+    background-color: #f39c12; /* Bright color for action button */
+    color: white;
+}
+
+.draggableContainer {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+.box {
+    background-color: #f39c12; /* Bright color for draggable items */
+    padding: 10px 15px;
+    border-radius: 10px;
+    margin: 5px;
+    color: black;
+    font-weight: bold;
+    cursor: grab;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.box:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.droppableContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    padding: 20px;
+    background-color: #34495e; /* Darker background for the drop area */
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.droppable {
+    width: 200px;
+    height: 70px;
+    border: 1px solid #f39c12; /* Bright borders to match draggable items */
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: border-color 0.3s ease, background-color 0.3s ease;
+}
+
+.droppable:hover {
+    border-color: #f39c12;
+    background-color: #f39c12;
+}
+
+.board {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #34495e; /* Dark background for board */
+    border-radius: 10px;
+    color: white;
+    font-weight: bold;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.board p {
+    margin: 5px 0;
+    font-size: 1.2em;
+}
+
+.correct {
+    background-color: #28a745 !important;
+    cursor: default;
+    padding: 10px;
+}
+
+.wrong {
+    background-color: #dc3545 !important;
+    padding: 10px;
+}
+
+.draggableFormat {
+    opacity: 0.8;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+#resetButton {
+    background-color: #f39c12;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 15px;
+}
+
+#resetButton:hover {
+    background-color: #f39c12;
+}

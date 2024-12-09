@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML and Java Programming Game</title>
+    <link rel="stylesheet" href="Drag and Drop.css">
+    <script src="Drag and Drop.js" defer></script>
+</head>
+<body>
+    <h1>HTML & Java Programming Concepts</h1>
+    
+    <!-- Draggable Java Terms -->
+    <div class="draggableContainer" id="draggableContainer">
+        <div class="box" draggable="true" id="box1" data-name="public">public</div>
+        <div class="box" draggable="true" id="box2" data-name="private">private</div>
+        <div class="box" draggable="true" id="box3" data-name="static">static</div>
+        <div class="box" draggable="true" id="box4" data-name="int">int</div>
+        <div class="box" draggable="true" id="box5" data-name="String">String</div>
+        <div class="box" draggable="true" id="box6" data-name="ArrayList">ArrayList</div>
+        <div class="box" draggable="true" id="box7" data-name="class">class</div>
+        <div class="box" draggable="true" id="box8" data-name="boolean">boolean</div>
+        <div class="box" draggable="true" id="box9" data-name="void">void</div>
+        <div class="box" draggable="true" id="box10" data-name="for">for</div>
+
+        <!-- Draggable HTML Terms -->
+        <div class="box" draggable="true" id="box11" data-name="div">div</div>
+        <div class="box" draggable="true" id="box12" data-name="span">span</div>
+        <div class="box" draggable="true" id="box13" data-name="img">img</div>
+        <div class="box" draggable="true" id="box14" data-name="a">a</div>
+        <div class="box" draggable="true" id="box15" data-name="h1">h1</div>
+        <div class="box" draggable="true" id="box16" data-name="p">p</div>
+        <div class="box" draggable="true" id="box17" data-name="ul">ul</div>
+        <div class="box" draggable="true" id="box18" data-name="li">li</div>
+        <div class="box" draggable="true" id="box19" data-name="button">button</div>
+        <div class="box" draggable="true" id="box20" data-name="form">form</div>
+    </div>
+
+    <!-- Droppable Areas -->
+    <div class="droppableContainer">
+        <div class="droppable" data-draggable-id="box1">
+            <p>Access modifier that allows access from any class</p>
+        </div>
+        <div class="droppable" data-draggable-id="box2">
+            <p>Access modifier that restricts access to the same class</p>
+        </div>
+        <div class="droppable" data-draggable-id="box3">
+            <p>Keyword used for defining class methods and variables that are shared by all instances</p>
+        </div>
+        <div class="droppable" data-draggable-id="box4">
+            <p>Data type for integers</p>
+        </div>
+        <div class="droppable" data-draggable-id="box5">
+            <p>Data type for strings of text</p>
+        </div>
+        <div class="droppable" data-draggable-id="box6">
+            <p>A resizable array that can grow dynamically</p>
+        </div>
+        <div class="droppable" data-draggable-id="box7">
+            <p>A blueprint for creating objects in Java</p>
+        </div>
+        <div class="droppable" data-draggable-id="box8">
+            <p>A data type that can hold only two values: true or false</p>
+        </div>
+        <div class="droppable" data-draggable-id="box9">
+            <p>Used for methods that do not return a value</p>
+        </div>
+        <div class="droppable" data-draggable-id="box10">
+            <p>A loop used for iterating over a range of values</p>
+        </div>
+
+        <!-- HTML Descriptions -->
+        <div class="droppable" data-draggable-id="box11">
+            <p>A block-level element for structuring content</p>
+        </div>
+        <div class="droppable" data-draggable-id="box12">
+            <p>An inline element used for styling portions of text</p>
+        </div>
+        <div class="droppable" data-draggable-id="box13">
+            <p>An HTML element used to embed images</p>
+        </div>
+        <div class="droppable" data-draggable-id="box14">
+            <p>An anchor tag used for creating hyperlinks</p>
+        </div>
+        <div class="droppable" data-draggable-id="box15">
+            <p>An HTML heading tag used for main titles</p>
+        </div>
+        <div class="droppable" data-draggable-id="box16">
+            <p>A paragraph tag used for text content</p>
+        </div>
+        <div class="droppable" data-draggable-id="box17">
+            <p>A list tag used for unordered lists</p>
+        </div>
+        <div class="droppable" data-draggable-id="box18">
+            <p>A list item tag used inside unordered lists</p>
+        </div>
+        <div class="droppable" data-draggable-id="box19">
+            <p>An element used to create clickable buttons</p>
+        </div>
+        <div class="droppable" data-draggable-id="box20">
+            <p>A form element used to gather user input</p>
+        </div>
+    </div>
+    
+    <div class="board">
+        Remarks:<p id="remarks"></p>
+        Score:<p id="scores"></p>
+    </div>
+
+    <button class="reset" onclick="reset(event)">Retry</button>
+    <h2>
+        Direction: Drag the HTML or Java term and drop it onto the corresponding description. You will see "<b style="color: green;">Correct</b>" if the term matches the correct description and "<b style="color: red;">Wrong</b>" if it does not match the corresponding description. Click the "Retry" button to restart the game.
+    </h2>
+</body>
+</html>
